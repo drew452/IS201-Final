@@ -1,0 +1,257 @@
+/* =============================================
+   fromscratch.css — Custom stylesheet for Drew Whimpey's From-Scratch Page
+   ============================================= */
+
+/* --- Body & Background --- */
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Page Header / Hero --- */
+.hero {
+    background: linear-gradient(135deg, #16213e 0%, #0f3460 60%, #533483 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e2b96f;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #c9d6df;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Navigation Bar --- */
+.scratch-nav {
+    background-color: #0f3460;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scratch-nav .brand {
+    color: #e2b96f;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.scratch-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.scratch-nav ul li a {
+    color: #c9d6df;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.scratch-nav ul li a:hover {
+    color: #e2b96f;
+}
+
+/* --- Main Content Wrapper --- */
+.content-wrapper {
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* --- Section Div Blocks --- */
+.section-block {
+    background-color: #16213e;
+    border-left: 5px solid #e2b96f;
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin-bottom: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-block h2 {
+    color: #e2b96f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.section-block p {
+    color: #c9d6df;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+/* --- Image Block Div --- */
+.image-block {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.image-block img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 3px solid #0f3460;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+.image-block .caption {
+    display: block;
+    color: #888;
+    font-size: 0.88rem;
+    margin-top: 8px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Video Block Div --- */
+.video-block {
+    background-color: #16213e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.video-block h2 {
+    color: #e2b96f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+
+.video-block .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.video-block .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- Tableau Div --- */
+.tableau-block {
+    background-color: #16213e;
+    border-left: 5px solid #533483;
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin-bottom: 36px;
+}
+
+.tableau-block h2 {
+    color: #e2b96f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+
+/* --- Lists --- */
+ol {
+    color: #c9d6df;
+    line-height: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ol li ul {
+    color: #a0b4c8;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+
+/* --- Anchor / Jump Link Target Padding --- */
+.anchor-target {
+    padding-top: 20px;
+}
+
+/* --- Back to Top / App Button --- */
+.btn-scratch {
+    display: inline-block;
+    background-color: #e2b96f;
+    color: #1a1a2e;
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.2s;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.btn-scratch:hover {
+    background-color: #c9a055;
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.btn-scratch-outline {
+    display: inline-block;
+    border: 2px solid #e2b96f;
+    color: #e2b96f;
+    padding: 10px 26px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s;
+    margin-bottom: 12px;
+}
+
+.btn-scratch-outline:hover {
+    background-color: #e2b96f;
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+/* --- Footer --- */
+.scratch-footer {
+    background-color: #0f3460;
+    color: #888;
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+}
+
+.scratch-footer a {
+    color: #e2b96f;
+    text-decoration: none;
+}
+
+.scratch-footer a:hover {
+    text-decoration: underline;
+}
