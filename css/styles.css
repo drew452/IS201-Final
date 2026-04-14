@@ -10676,7 +10676,8 @@ header.masthead {
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
- background-position-y: -0px;
+  background-position: center 150px;
+
 }
 header.masthead:before {
   content: "";
